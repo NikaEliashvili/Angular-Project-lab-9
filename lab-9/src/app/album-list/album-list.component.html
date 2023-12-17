@@ -1,0 +1,8 @@
+<ul class="ul-el">
+  <li *ngFor="let album of albums">
+    {{ album.title }}
+    <a class="view-link" [routerLink]="['/albums/photos/' + album.id]"
+      >View Photos</a
+    >
+  </li>
+</ul>

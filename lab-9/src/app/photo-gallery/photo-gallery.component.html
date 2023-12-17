@@ -1,0 +1,19 @@
+<div *ngIf="isLoading" class="loader-div">
+  <div class="loader"></div>
+</div>
+
+<div class="photos" *ngIf="photos.length > 0 || isLoading; else noPhotos">
+  <div class="photo" *ngFor="let photo of photos">
+    <p class="photo-title">{{ photo.title }}</p>
+    <img
+      class="photo-img"
+      loading="lazy"
+      [src]="photo.url"
+      alt="{{ photo.title }}"
+    />
+  </div>
+</div>
+
+<ng-template #noPhotos>
+  <p>No photos available for this album.</p>
+</ng-template>

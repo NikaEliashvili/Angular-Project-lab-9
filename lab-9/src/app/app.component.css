@@ -1,0 +1,22 @@
+ .app {
+     display: flex;
+     flex-direction: column;
+     justify-content: start;
+     align-items: center;
+ }
+
+ .app h1 {
+     font-size: 3rem;
+     font-weight: 900;
+     font-family: var(--font-heading);
+ }
+
+ .album-link {
+     font-size: 2.5rem;
+     font-weight: 300;
+ }
+
+ .album-link:hover {
+     color: #FFE74C;
+     text-decoration: underline;
+ }

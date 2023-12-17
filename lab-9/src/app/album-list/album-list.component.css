@@ -1,0 +1,27 @@
+.ul-el {
+    font-size: 1.125rem;
+}
+
+.ul-el li {
+    display: flex;
+    padding: 0.7rem 0.5rem;
+    border-bottom: 1px solid #449DD1;
+}
+
+.ul-el li::before {
+    content: "";
+    width: 7px;
+    height: 7px;
+    background-color: #449DD1;
+    border-radius: 50%;
+    margin: auto 0;
+    margin-right: 1rem;
+}
+
+.view-link {
+    display: block;
+    width: fit-content;
+    margin-left: auto;
+    font-weight: 100;
+    font-size: 1rem;
+}
